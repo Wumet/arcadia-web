@@ -4,8 +4,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import { IoIosNotifications } from "react-icons/io";
-import Modal from "../Modal";
-import LogOutModal from "../modals/LogOuModal";
 
 function Header() {
   const navLinks = [
@@ -22,11 +20,11 @@ function Header() {
     setNavIsOpen(!navIsOpen);
   };
 
-  const [openModal, setOpenModal] = useState(false);
+  // const [openModal, setOpenModal] = useState(false);
 
-  const handleModal = () => {
-    setOpenModal(true);
-  };
+  // const handleModal = () => {
+  //   setOpenModal(true);
+  // };
 
   return (
     <>
@@ -53,12 +51,12 @@ function Header() {
         </ul>
         <div className="">
           <IoIosNotifications className="text-2xl" />
-          <button onClick={handleModal}>Log out</button>
+          <button onClick>Log out</button>
         </div>
 
         {/* confirm log out modal */}
         {/* <LogOutModal isOpen={openModal} /> */}
-        <Modal isOpen={openModal} />
+        {/* <Modal isOpen={openModal} /> */}
 
         {/* mobile hambuger trigger */}
         <button className="sm:hidden text-xl" onClick={handleClick}>
