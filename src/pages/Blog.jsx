@@ -4,7 +4,6 @@ function About() {
   return (
     <>
       <title>Blog</title>
-      <Header></Header>
       <div className="my-10">
         <h1 className="text-3xl uppercase">Blog</h1>
       </div>

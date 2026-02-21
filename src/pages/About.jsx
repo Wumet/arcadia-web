@@ -56,7 +56,6 @@ function About() {
   return (
     <>
       <title>About</title>
-      <Header />
       <div className="">
         {/* hero */}
         <section className="relative h-[50vh] lg:h-[60vh] py-14 sm:py-20 2xl:py-30 px-6 sm:px-20 xl:px-40 2xl:px-50 space-y-8 md:space-y-12 bg-[url(./assets/heroImage.jpg)] bg-cover bg-no-repeat bg-center flex justify-center items-center">
@@ -196,8 +195,6 @@ function About() {
           </div>
           <div className=""></div>
         </section>
-        {/* <Testimonials testimonials={testimonials} /> */}
-        <Footer></Footer>
       </div>
     </>
   );

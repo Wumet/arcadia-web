@@ -4,13 +4,13 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 
-function Header() {
+function Header({ onLogInClick, onCreateAccountClick }) {
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Properties", path: "/Properties" },
-    { name: "About", path: "/About" },
-    { name: "Contact Us", path: "/Contact" },
-    { name: "Blog", path: "/Blog" },
+    { name: "Properties", path: "/properties" },
+    { name: "About", path: "/about" },
+    { name: "Contact Us", path: "/contact" },
+    { name: "Blog", path: "/blog" },
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +38,16 @@ function Header() {
           ))}
         </ul>
         <div className="max-sm:hidden">
-          <Link to={"/Login"} className="pr-2 hover:underline">
+          <button onClick={onLogInClick} className="pr-2 hover:underline">
             Login
-          </Link>
+          </button>
           |
-          <Link to={"/Create Account"} className="pl-2 hover:underline">
+          <button
+            onClick={onCreateAccountClick}
+            className="pl-2 hover:underline"
+          >
             Create Account
-          </Link>
+          </button>
         </div>
         <button className="sm:hidden text-xl" onClick={handleClick}>
           {isOpen ? <MdClose /> : <GiHamburgerMenu />}
@@ -65,6 +68,20 @@ function Header() {
               </li>
             ))}
           </ul>
+          <div className="mt-12 space-y-6">
+            <button
+              onClick={onLogInClick}
+              className="w-full border py-2 rounded-md"
+            >
+              Login
+            </button>
+            <button
+              onClick={onCreateAccountClick}
+              className="w-full bg-primary-500 py-2 rounded-md"
+            >
+              Create Account
+            </button>
+          </div>
         </div>
       )}
     </>

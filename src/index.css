@@ -1,4 +1,3 @@
-/* @import url("https://use.typekit.net/xxxxxxx.css"); */
 @import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import "tailwindcss";
 
@@ -6,7 +5,6 @@
   /* Fonts */
   --font-heading: 'SN Pro', sans-serif;
   --font-body: 'Lato', sans-serif;
-  --font-test: 'chaparral-pro', sans-serif;
 
   /* Primary Orange Shades */
   --color-primary-50: #FFF8E6;
@@ -53,6 +51,21 @@
   --color-dark: #1A1301;
 }
 
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+th, td{
+@apply p-3
+}
+
 body {
-@apply bg-neutral-100 text-primary-900 font-test tracking-wide font-normal;
+@apply bg-neutral-100 text-primary-900 tracking-wide font-normal;
 }

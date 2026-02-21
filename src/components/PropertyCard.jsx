@@ -41,15 +41,14 @@ function PropertyCard({ property, tagVariant = "default" }) {
               {property.startingPrice}
             </p>
           </div>
-          <Link to={property.detailsUrl}>
-            <Button
-              variant="primary"
-              size="md"
-              label="View Details"
-              Icon={FaArrowRight}
-              // extraClass={`md:${(size = "md")}`}
-            />
-          </Link>
+          <Button
+            to="/property"
+            variant="primary"
+            size="md"
+            label="View Details"
+            Icon={FaArrowRight}
+            // extraClass={`md:${(size = "md")}`}
+          />
         </div>
       </div>
     </div>

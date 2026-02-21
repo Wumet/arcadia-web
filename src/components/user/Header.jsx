@@ -49,7 +49,7 @@ function Header() {
             </li>
           ))}
         </ul>
-        <div className="">
+        <div className="max-sm:hidden">
           <IoIosNotifications className="text-2xl" />
           <button onClick>Log out</button>
         </div>

@@ -1,12 +1,10 @@
 import FeaturedProperties from "../components/FeaturedProperties";
-import Header from "../components/Header";
 import Hero from "../components/Hero";
 import WhatsNew from "../components/WhatsNew";
 import imageUrl from "../assets/heroImage.jpg";
 import Message from "../components/Message";
 import Testimonials from "../components/Testimonials";
 import NewLetterSub from "../components/NewsLetterSub";
-import Footer from "../components/Footer";
 
 function HomePage() {
   const properties = [
@@ -99,14 +97,12 @@ function HomePage() {
   return (
     <>
       <title>Home</title>
-      <Header />
       <Hero />
       <FeaturedProperties properties={properties} />
       <WhatsNew announcements={announcements} />
       <Message />
       <Testimonials testimonials={testimonials} />
       <NewLetterSub />
-      <Footer />
     </>
   );
 }

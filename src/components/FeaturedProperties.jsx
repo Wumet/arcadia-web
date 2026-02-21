@@ -10,7 +10,7 @@ function FeaturedProperties({ properties }) {
           Featured Properties
         </h1>
         <Link
-          to="./pages/Properties"
+          to="/properties"
           className="text-sm text-accent flex items-center gap-3 max-sm:hidden"
         >
           <span>Browse all Properties</span>
@@ -23,7 +23,7 @@ function FeaturedProperties({ properties }) {
         ))}
         <Link
           to=""
-          className="text-sm text-accent flex items-center justify-center py-4 gap-3 sm:hidden border border-accent"
+          className="mt-6 text-sm text-accent flex items-center justify-center py-4 gap-3 sm:hidden border border-accent rounded-md"
         >
           <span>Browse all Properties</span>
           <FaArrowRight className="opacity-80" />

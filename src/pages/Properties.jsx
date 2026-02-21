@@ -4,7 +4,6 @@ function About() {
   return (
     <>
       <title>Properties</title>
-      <Header />
       <>
         <section className="relative h-[50vh] lg:h-[60vh] py-14 sm:py-20 2xl:py-30 px-6 sm:px-20 xl:px-40 2xl:px-50 space-y-8 md:space-y-12 bg-[url(./assets/heroImage.jpg)] bg-cover bg-no-repeat bg-center flex justify-center items-center">
           <div className="absolute inset-0 bg-linear-to-bl from-black/70 to-black/70"></div>
