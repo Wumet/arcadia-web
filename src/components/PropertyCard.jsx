@@ -14,7 +14,7 @@ function PropertyCard({ property, tagVariant = "default" }) {
         <img
           src={property.imageUrl}
           alt={property.propertyName}
-          className="bg-cover h-full w-full bg-center"
+          className="bg-cover max-xl:h-80 xl:h-100 w-full bg-center"
         />
         <p
           className={`text-xs w-fit h-fit rounded-sm px-2 py-1 ${tagVariants[tagVariant]} absolute inset-4`}
@@ -34,10 +34,10 @@ function PropertyCard({ property, tagVariant = "default" }) {
             </p>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 xl:gap-4 pt-4">
+        <div className="flex justify-between pt-4">
           <div className="">
             <p className="text-[9px] font-light uppercase">Starting Price</p>
-            <p className="text-primary-500 font-semibold text-xl xl:text-2xl">
+            <p className="text-primary-600 font-semibold text-xl xl:text-2xl">
               {property.startingPrice}
             </p>
           </div>

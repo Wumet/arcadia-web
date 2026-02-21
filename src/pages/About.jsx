@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Image from "../assets/luxury-estate.png";
+import memberImage from "../assets/ceo.jpg";
 import Footer from "../components/Footer";
 import Testimonials from "../components/Testimonials";
 import { FaHandshakeAngle } from "react-icons/fa6";
@@ -34,6 +35,21 @@ function About() {
       title: "Quality",
       description:
         "Setting the gold standard in construction and finishing details.",
+    },
+  ];
+
+  const teamMembers = [
+    {
+      id: "1",
+      image: memberImage,
+      memberName: "Joseph Smith",
+      title: "CEO",
+    },
+    {
+      id: "2",
+      image: memberImage,
+      memberName: "Smith Wath",
+      title: "CEO",
     },
   ];
 
@@ -128,7 +144,7 @@ function About() {
           <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 mt-8 ">
             {values.map((value) => (
               <div
-                className="space-y-3 rounded-md bg-white py-4 px-4 sm:px-6 xl:px-8 shadow-md shadow-neutral-200 border-l-3 border-accent"
+                className="space-y-3 rounded-md bg-whitex py-4 px-4 sm:px-6 xl:px-8 border-l-3 border-accent"
                 key={value.id}
               >
                 <div className="text-5xl xl:6xl text-primary-500">
@@ -147,6 +163,21 @@ function About() {
           <h1 className="text-3xl sm:text-4xl xl:text-5xl font-[510]">
             Meet Our Team
           </h1>
+          <div className="mt-8 grid grid-cols-4 gap-4">
+            {teamMembers.map((member) => (
+              <div className="">
+                <img
+                  src={member.image}
+                  alt={member.title}
+                  className="w-70 h-60"
+                />
+                <div className="">
+                  <p>{member.memberName}</p>
+                  <p>{member.title}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* career/joinus */}

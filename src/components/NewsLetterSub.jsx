@@ -3,9 +3,9 @@ import ceoImage from "../assets/ceo.jpg";
 
 function NewLetterSub() {
   return (
-    <section className="w-full max-sm:py-14 sm:py-20x 2xl:py-30x px-6 sm:px-20 xl:px-40 2xl:px-50 flex gap-20 xl:gap-60 items-center bg-dark text-neutral-50">
-      <div className="space-y-6 xl:space-y-10">
-        <h1 className="text-4xl sm:text-5xl xl:text-6xl sm:text-nowrap font-[510]">
+    <section className="w-full max-sm:py-14 sm:py-20x 2xl:py-30x px-6 sm:px-10 xl:px-40 2xl:px-50 flex gap-20 xl:gap-60 items-center bg-dark text-neutral-50">
+      <div className="space-y-4 xl:space-y-10">
+        <h1 className="text-2xl sm:text-5xl xl:text-6xl sm:text-nowrap font-[510]">
           Stay Ahead of the Market
         </h1>
         <p className="xl:text-xl font-ligh text-neutral-300">

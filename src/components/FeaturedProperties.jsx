@@ -4,13 +4,13 @@ import { FaArrowRight } from "react-icons/fa6";
 
 function FeaturedProperties({ properties }) {
   return (
-    <section className="py-14 sm:py-20 2xl:py-30 px-6 sm:px-20 xl:px-40 2xl:px-50 space-y-8 md:space-y-12">
+    <section className="py-10 sm:py-20 2xl:py-30 px-6 sm:px-10 xl:px-40 2xl:px-50 space-y-8 md:space-y-12">
       <div className="flex justify-between items-center">
-        <h1 className="text-4xl sm:text-5xl xl:text-6xl font-[510]">
+        <h1 className="text-3xl sm:text-5xl xl:text-6xl font-[510]">
           Featured Properties
         </h1>
         <Link
-          to=""
+          to="./pages/Properties"
           className="text-sm text-accent flex items-center gap-3 max-sm:hidden"
         >
           <span>Browse all Properties</span>
